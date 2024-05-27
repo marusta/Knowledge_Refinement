@@ -1,5 +1,7 @@
-GROUND_TRUTH_PATH = "bimacs_rgbd_data_ground_truth.zip"
-SAVE_PATH = "all_sequences.json"
+GROUND_TRUTH_PATH = "bimacs_rgbd_data_ground_truth"
+DERIVED_DATA_PATH = "bimacs_derived_data"
+DERIVED_3D_OBJECTS = "bimacs_derived_data_3d_objects"
+SAVE_PATH = "data_full.json"
 
 actions_mapping = {0:   'idle', 
                    1:	'approach',
@@ -34,3 +36,8 @@ objects_mapping =  {0:	'bowl',
                     14:	'left hand',
                     15:	'right hand'
 }
+
+subjects = ['subject_' + str(i) for i in range(1, 7)]
+tasks = ['task_1_k_cooking', 'task_2_k_cooking_with_bowls', 'task_3_k_pouring', 'task_4_k_wiping', 
+            'task_5_k_cereals', 'task_6_w_hard_drive', 'task_7_w_free_hard_drive', 'task_8_w_hammering', 'task_9_w_sawing']
+takes = [f"take_{i}" for i in range(10)]
