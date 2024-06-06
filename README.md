@@ -10,7 +10,9 @@
 
 ### Reading and transforming data
 - This is the order of python files to run:
-  -   1. read_all_data.py
-  -   2. find_intersections.py
-  -   3. transform_data.py
-  -   4. propagate_tools.py
+  1. read_all_data.py
+  2. find_intersections.py
+  3. transform_data.py
+  4. propagate_tools.py
+
+ - As a result of this steps transformed_data.json is created.
