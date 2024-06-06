@@ -28,16 +28,14 @@ def propagate_tools(actions):
 
     return actions
 
-# transformed_data['actions'] 
-# acts = propagate_tools(transformed_data['actions'])
 if __name__ == "__main__":
-    # Read the full data
+    # Read the full transformed data
     transformed_data = read_json_file('../data/transformed_full_data.json')
  
     for i in range (len(transformed_data)):
         acts = propagate_tools(transformed_data[i]['actions'])
         transformed_data[i]['actions'] = acts
 
-    # Save the processed data (if needed)
+    # Save the processed data
     save_to_json(transformed_data, '../data/transformed_data.json')
 

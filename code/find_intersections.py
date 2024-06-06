@@ -70,13 +70,9 @@ def process_data(data, percentage_threshold=20.0):
         for frame_key in entry:
             if frame_key.startswith('frame_'):
                 frame_intersections = find_intersections_in_frames(entry[frame_key], percentage_threshold)
-                # processed_entry[frame_key] = entry[frame_key]
-                # processed_entry[frame_key]['intersections'] = frame_intersections
+                
                 processed_entry['intersections'][frame_key] = frame_intersections
                 
-                # if frame_intersections:
-                #     print(f"{frame_key}: intersecting pairs -> {frame_intersections}")
-                    #processed_entry[frame_key]['intersections'].append()
         processed_data.append(processed_entry)
     return processed_data
 
@@ -110,5 +106,5 @@ if __name__ == "__main__":
     # Process the data to find intersections
     processed_data = process_data(data, percentage_threshold=20.0)
     
-    # Save the processed data (if needed)
+    # Save the processed data
     save_to_json(processed_data, '../data/data_full_with_intersections.json')

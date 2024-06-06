@@ -32,7 +32,7 @@ def transform_data(data):
     return actions
 
 if __name__ == "__main__":
-    # Read the full data
+    # Read the full data with intersections
     process_data = read_json_file('../data/data_full_with_intersections.json')
         
     transformed_data = []
