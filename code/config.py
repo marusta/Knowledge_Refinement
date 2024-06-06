@@ -1,7 +1,7 @@
-GROUND_TRUTH_PATH = "bimacs_rgbd_data_ground_truth"
-DERIVED_DATA_PATH = "bimacs_derived_data"
-DERIVED_3D_OBJECTS = "bimacs_derived_data_3d_objects"
-SAVE_PATH = "data_full.json"
+GROUND_TRUTH_PATH = "../data/bimacs_rgbd_data_ground_truth"
+DERIVED_DATA_PATH = "../data/bimacs_derived_data"
+DERIVED_3D_OBJECTS = "../data/bimacs_derived_data_3d_objects"
+SAVE_PATH = "../data/data_full.json"
 
 actions_mapping = {0:   'idle', 
                    1:	'approach',
