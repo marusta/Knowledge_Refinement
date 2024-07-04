@@ -9,10 +9,13 @@
   - https://bimanual-actions.humanoids.kit.edu/download/bimacs_derived_data_spatial_relations.zip
 
 ### Reading and transforming data
-- This is the order of python files to run:
+- This is the order of .py files to run:
   1. read_all_data.py
   2. find_intersections.py
   3. transform_data.py
-  4. propagate_tools.py
 
- - As a result of this steps transformed_data.json is created.
+ - As a result of these steps transformed_data.json is created.
+
+### Transforming intermediate .json format to the memnet format:
+- code/to_memnet_format.py ----> complete_action_patterns.json is created
+
