@@ -1,0 +1,55 @@
+graph [
+  directed 1
+  node [
+    id 0
+    label "66852eec8cc61c332820ff00"
+    type "action"
+    utterances "_networkx_list_start"
+    utterances "task_1_k_cooking"
+    timestamp 1720004332.3480809
+    memory "stm"
+    uuid "66852eec8cc61c332820ff00"
+    subject "subject_1"
+  ]
+  node [
+    id 1
+    label "66852eec8cc61c332820ff01"
+    type "agent"
+    utterances "_networkx_list_start"
+    utterances "subject_1"
+    memory "stm"
+    uuid "66852eec8cc61c332820ff01"
+  ]
+  node [
+    id 2
+    label "66852eec8cc61c332820ff02"
+    type "action"
+    utterances "_networkx_list_start"
+    utterances "idle"
+    timestamp 1720004332.3480809
+    duration 2.2
+    memory "stm"
+    uuid "66852eec8cc61c332820ff02"
+    actor "right_hand"
+    start_frame 0
+    end_frame 66
+  ]
+  node [
+    id 3
+    label "66852eec8cc61c332820ff03"
+    type "action"
+    utterances "_networkx_list_start"
+    utterances "approach"
+    timestamp 1720004334.548081
+    duration 0.8333333333333334
+    memory "stm"
+    uuid "66852eec8cc61c332820ff03"
+    actor "right_hand"
+    start_frame 66
+    end_frame 91
+  ]
+  node [
+    id 4
+    label "66852eec8cc61c332820ff04"
+    type "object"
+    utterances "_networkx_list_start"
